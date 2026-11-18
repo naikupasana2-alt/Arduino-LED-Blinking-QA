@@ -1,0 +1,13 @@
+// Arduino LED Blinking
+const int LED_PIN = LED_BUILTIN;   // LED pin (onboard LED)
+
+void setup() {
+  pinMode(LED_PIN, OUTPUT);        // Configure LED pin as output
+}
+
+void loop() {
+  digitalWrite(LED_PIN, HIGH);     // Turn LED ON
+  delay(1000);                     // Wait 1000 ms
+  digitalWrite(LED_PIN, LOW);      // Turn LED OFF
+  delay(1000);                     // Wait 1000 ms
+}
